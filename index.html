@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+      .navbar {
+        background-color: black;
+      }
+    
+      .navbar-brand {
+        font-weight: bold;
+        color: white;
+      }
+    
+      .navbar-nav .nav-link {
+        color: white;
+      }
+    
+      .navbar-nav .nav-link.active {
+        font-weight: bold;
+      }
+    
+      .navbar .social-icons {
+        font-size: 24px;
+        color: white;
+        gap: 20px;
+        margin-left: 10px;
+      }
+
+      .social-icons {
+        display: flex;
+        align-items: center;
+      }
+
+      .social-icon {
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+      }
+
+      .navbar-nav-centered {
+        justify-content: center;
+      }
+
+      .custom-container {
+        display: flex;
+        overflow: hidden;
+      }
+      .custom-container .container-part:nth-child(1):hover {
+        transform: scale(1.05);
+      }
+
+      .custom-container .container-part:nth-child(2):hover {
+        transform: scale(1.05);
+      }
+
+      .container-part img {
+      max-width: 100%;
+      height: auto;
+      }
+
+      .custom-container .container-part {
+      margin: 0;
+      padding: 0; 
+      flex: 1;
+      background-color: #f0f0f0;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    } 
+
+    .container {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .navbar {
+      margin-bottom: 0;
+    }
+
+    .custom-container {
+      margin: 0;
+    }
+
+    .line-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px; 
+}
+
+.line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: black;
+}
+
+.text {
+  font-size: 24px;
+  margin: 20px;
+}
+
+.custom-container-group .custom-container-1 {
+  background-color: #ffcccc; 
+  padding: 20px; 
+}
+
+.custom-container-group .custom-container-2 {
+ 
+  background-color: #ccffcc; 
+  padding: 20px;
+}
+
+.custom-container-group .custom-container-3 {
+  background-color: #ccccff; 
+  padding: 20px;
+}
+
+.custom-container-group .custom-container-4 {
+  background-color: #ffffcc;
+  padding: 20x;
+}
+
+.custom-container-group {
+  display: flex;
+  gap: 12px;
+  overflow: hidden;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+.custom-container-group .container-part {
+  background-color: #f0f0f0;
+  padding: 5px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.custom-container-group .container-part:hover {
+  transform: scale(1.05);
+  background-color: #ccc;
+}
+
+.custom-container-group .container-part img {
+  max-width: 100%;
+  height: auto;
+  background-color: grey;
+  border-radius: 15px;
+}
+
+.line-container2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+  .iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Shreyas Kharche</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <div class="container">
+            <ul class="navbar-nav navbar-nav-centered me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Me</a>
+              </li>
+            </ul>
+          </div>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/" target="_blank">
+              <img src="Instagram_logo.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/shreyas-kharche-557bb6229/" target="_blank">
+              <img src="Linkedin_logo.png" alt="LinkedIn" class="social-icon">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+              <img src="Facebook_logo.jpeg" alt="Facebook" class="social-icon">
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="custom-container">
+      <div class="container-part">
+        <img src="Coder.png" alt="Part 1 Image">
+      </div>
+      <div class="container-part">
+        <img src="AI Enthusiast.png" alt="Part 2 Image">
+      </div>
+    </div>
+    
+    <div class="line-container">
+      <div class="line"></div>
+      <div class="text">🇸‌🇴‌🇲‌🇪‌ 🇴‌🇫‌ 🇲‌🇾‌ 🇱‌🇦‌🇹‌🇪‌🇸‌🇹‌ 🇵‌🇷‌🇴‌🇯‌🇪‌🇨‌🇹‌🇸‌</div>
+      <div class="line"></div>
+    </div>
+
+    <div class="custom-container-group">
+      <div class="container-part custom-container-1">
+        <a href="HomeAutomation.html">
+          <img src="Home Automation.jpg-org" alt="Image 1">
+          <p>Description for Container 1</p>
+        </a>
+      </div>
+      <div class="container-part custom-container-2">
+        <img src="Home Automation.jpg-org" alt="Image 2">
+        <p>Description for Container 2</p>
+      </div>
+      <div class="container-part custom-container-3">
+        <img src="Home Automation.jpg-org" alt="Image 3">
+        <p>Description for Container 3</p>
+      </div>
+      <div class="container-part custom-container-4">
+        <img src="Home Automation.jpg-org" alt="Image 4">
+        <p>Description for Container 4</p>
+      </div>
+    </div>
+
+    <div class="line-container2">
+      <div class="line"></div>
+      <div class="text">Badges And Certifications</div>
+      <div class="line"></div>
+    </div>
+
+    <div class="iframe-container">
+  <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="f89fe7d9-3a80-4af0-bd67-4e1faed0d453" data-share-badge-host="https://www.credly.com"></div>
+  <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+  
+  <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="20b85001-ef85-40d5-bc8d-b44ed2141a05" data-share-badge-host="https://www.credly.com"></div>
+  <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+</div>
+
+  </body>
+</html>
